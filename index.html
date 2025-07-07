@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Simple Search</title>
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <form id="search" onsubmit="event.preventDefault(); search();">
+        <h1>Simple Search</h1>
+        <input type="text" id="searchInput" placeholder="Search" autofocus autocomplete="off"/>
+        <div class="button-group">
+            <input type="button" id="searchButton" value="Search" onclick="search()"/>
+            <input type="button" id="imageSearchButton" value="Image Search" onclick="imageSearch()"/>
+            <select id="searchEngineDropdown">
+                <option value="duckduckgo">DuckDuckGo</option>
+                <option value="google">Google</option>
+                <option value="wikipedia">Wikipedia</option>
+                <option value="yahoo">Yahoo</option>
+                <option value="bing">Bing</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
